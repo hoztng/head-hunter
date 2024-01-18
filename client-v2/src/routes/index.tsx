@@ -1,6 +1,6 @@
 // src/routes/PublicRoutes.ts
 import React from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import HomePage from '@views/HomePage';
 import AboutPage from '@views/AboutPage';
 import NotFoundPage from '@views/NotFoundPage';
