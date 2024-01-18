@@ -76,7 +76,7 @@ const AboutSection:React.FC = () => {
       <StyledContainer>
       <div id="Who we are">
       <StyledGridContainer>
-          <StyledImage src="src/assets/images/professional-collaboration.png"/>
+          <StyledImage src="/assets/images/professional-collaboration.png"/>
           <StyledContentWrapper>
             <SectionTitle>About Us</SectionTitle>
             <ContentTitleWrapper>We’re Not Just A typical job portal</ContentTitleWrapper>
@@ -86,8 +86,8 @@ const AboutSection:React.FC = () => {
               their dream roles is what we do best.
             </SectionText>
             <StyledCardWrapper>
-              <CounterCard  text="15 K+" subtext="Successful Hires" iconUrl="src/assets/icons/ic_successful_hires.svg" shadow={false} />
-              <CounterCard  text="10 k+" subtext="Companies Seeking Talent" iconUrl="src/assets/icons/ic_company.svg" shadow={false} />
+              <CounterCard  text="15 K+" subtext="Successful Hires" iconUrl="/assets/icons/ic_successful_hires.svg" shadow={false} />
+              <CounterCard  text="10 k+" subtext="Companies Seeking Talent" iconUrl="/assets/icons/ic_company.svg" shadow={false} />
             </StyledCardWrapper>
           </StyledContentWrapper>
 
@@ -102,8 +102,8 @@ export default AboutSection;
 
   {/* 
     <Container>
-      <CounterCard  text="800 K+" subtext="Current Job Openings" iconUrl="src/assets/icons/ic_job_bag.svg" shadow={true} />
-      <CounterCard  text="14 Days" subtext="Average Time To Hire" iconUrl="src/assets/icons/ic_date_time.svg" shadow={true} />
+      <CounterCard  text="800 K+" subtext="Current Job Openings" iconUrl="/assets/icons/ic_job_bag.svg" shadow={true} />
+      <CounterCard  text="14 Days" subtext="Average Time To Hire" iconUrl="/assets/icons/ic_date_time.svg" shadow={true} />
       
     </Container> 
 

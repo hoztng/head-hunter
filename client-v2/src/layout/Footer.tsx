@@ -152,7 +152,7 @@ const Footer:React.FC = () => {
         <GridContainer>
           <GridItem verticalAlign="center" horizontalAlign="center">
             <LogoIcon
-              src="src/assets/icons/logo-icon.svg"
+              src="/assets/icons/logo-icon.svg"
               alt="head hunter website"
             />
             <FooterText>
@@ -172,13 +172,13 @@ const Footer:React.FC = () => {
             <FooterTitle >Let’s Connect</FooterTitle>
             <IconListWrapper>
               <IconWrapper onClick={() => window.open('https://www.facebook.com', '_blank')}>
-                <Icon src="src/assets/icons/fb.svg"/>
+                <Icon src="/assets/icons/fb.svg"/>
               </IconWrapper>
               <IconWrapper onClick={() => window.open('https://www.linkedin.com', '_blank')}>
-                <Icon src="src/assets/icons/linkedin.svg"/>
+                <Icon src="/assets/icons/linkedin.svg"/>
               </IconWrapper>
               <IconWrapper onClick={() => window.open('https://www.twitter.com', '_blank')}>
-                <Icon src="src/assets/icons/twiter.svg"/>
+                <Icon src="/assets/icons/twiter.svg"/>
               </IconWrapper>
             </IconListWrapper>
           </GridItem>

@@ -90,11 +90,11 @@ const StakeholderSection: React.FC = () => {
             <Text variant='regular' >Our candidates have been hired by</Text>
         </TextWrapper>
         <IconWrapper>
-        <StyledIcon src="src/assets/icons/Logo WSO2.svg" />
-        <StyledIcon src="src/assets/icons/Logo Amazon.svg" />
-        <StyledIcon src="src/assets/icons/Logo IBM.svg" />
-        <StyledIcon src="src/assets/icons/Logo Intel.svg" />
-        <StyledIcon src="src/assets/icons/Logo Microsoft.svg" />
+        <StyledIcon src="/assets/icons/Logo WSO2.svg" />
+        <StyledIcon src="/assets/icons/Logo Amazon.svg" />
+        <StyledIcon src="/assets/icons/Logo IBM.svg" />
+        <StyledIcon src="/assets/icons/Logo Intel.svg" />
+        <StyledIcon src="/assets/icons/Logo Microsoft.svg" />
         </IconWrapper>
     </Container2>
     </Container>

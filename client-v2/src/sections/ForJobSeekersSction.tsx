@@ -24,22 +24,22 @@ const ForJobSeekersSction: React.FC<ForJobSeekersSctionProps> = () => {
             <DetailCardWrapper
               text="Diverse Opportunities Across Industries"
               subtext="Whether you're kick starting your career or a seasoned professional, our platform offers diverse roles for you across various industries."
-              iconUrl="src/assets/icons/ic_employee.svg"
+              iconUrl="/assets/icons/ic_employee.svg"
             />
             <DetailCardWrapper
               text="Global Opportunities"
               subtext="We're a global career connector. Embrace the chance to expand your career journey worldwide  and it has no limits with us."
-              iconUrl="src/assets/icons/ic_global.svg"
+              iconUrl="/assets/icons/ic_global.svg"
             />
             <DetailCardWrapper
               text="Efficient Application Process"
               subtext="No more cover letters or lengthy procedures. Effortlessly navigate through opportunities, attach your tailored resume, and submit with a click."
-              iconUrl="src/assets/icons/ic_application.svg"
+              iconUrl="/assets/icons/ic_application.svg"
             />
           </StyledCardWrapper>
         </StyledDetailsWrapper>
         <StyledImageWrapper>
-          <StyledImage src="src/assets/images/job_seeker.png" />
+          <StyledImage src="/assets/images/job_seeker.png" />
         </StyledImageWrapper>
       </StyledInnerContainer>
     </Container>

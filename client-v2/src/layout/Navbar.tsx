@@ -85,11 +85,11 @@ const MenuController = styled.img`
 `;
 
 const MenuIcon = styled(MenuController).attrs({
-  src: "src/assets/icons/menu.svg",
+  src: "/assets/icons/menu.svg",
 })``;
 
 const CloseIcon = styled(MenuController).attrs({
-  src: "src/assets/icons/close.svg",
+  src: "/assets/icons/close.svg",
 })``;
 
 const LogoIcon = styled.img`
@@ -213,7 +213,7 @@ const Navbar = () => {
       <div ref={navRef}>
         <Nav open={open} navbavisible={navbaVisible}>
           <LogoIcon
-            src="src/assets/icons/logo-icon.svg"
+            src="/assets/icons/logo-icon.svg"
             alt="head hunter website"
           />
           <LinksWrapper>

@@ -26,22 +26,22 @@ const ForRecruitersSction: React.FC<ForJobRecruitersSctionProps> = () => {
               subtext="We tailors the hiring process to your needs, 
               leveraging smart candidate matching, real-time 
               insights, and innovative tools."
-              iconUrl="src/assets/icons/ic_employer.svg"
+              iconUrl="/assets/icons/ic_employer.svg"
             />
             <DetailCardWrapper
               text="Access Top Talent Instantly"
               subtext="We accelerates your recruitment journey, connecting you with high-caliber candidates effortlessly. welcome excellence into your team."
-              iconUrl="src/assets/icons/ic_talent.svg"
+              iconUrl="/assets/icons/ic_talent.svg"
             />
             <DetailCardWrapper
               text="Diverse Talent Pools"
               subtext="Embrace diversity in your workplace. We brings together candidates from various backgrounds and experiences."
-              iconUrl="src/assets/icons/ic_talent_pool.svg"
+              iconUrl="/assets/icons/ic_talent_pool.svg"
             />
           </StyledCardWrapper>
         </StyledDetailsWrapper>
         <StyledImageWrapper>
-          <StyledImage src="src/assets/images/recruiter.png" />
+          <StyledImage src="/assets/images/recruiter.png" />
         </StyledImageWrapper>
       </StyledInnerContainer>
     </Container>
