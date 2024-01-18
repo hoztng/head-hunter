@@ -12,12 +12,6 @@ const InnerContainer = styled.div`
   background-color: #f8f5ff;
 `;
 
-const StyledForm = styled.form`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 24px;
-`;
-
 const StyledFormGroup = styled.div`
   margin-bottom: 1.5rem;
   position: relative;

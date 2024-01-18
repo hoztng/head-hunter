@@ -141,7 +141,7 @@ const ButtonContainer = styled.div`
 `;
 
 
-const HeroSection = () => {
+const HeroSection:React.FC = () => {
   return (
     <GradientBackground>
       

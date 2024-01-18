@@ -77,7 +77,7 @@ const ContentTitleWrapper = styled(ContentTitle)`
   }
 `;
 
-const AboutSection = () => {
+const AboutSection:React.FC = () => {
   return (
       <StyledContainer>
       <div id="Who we are">

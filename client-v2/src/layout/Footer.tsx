@@ -145,7 +145,7 @@ const IconListWrapper = styled.div`
   margin-top: 24px;
 `;
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <FooterContainer>
       <Container>

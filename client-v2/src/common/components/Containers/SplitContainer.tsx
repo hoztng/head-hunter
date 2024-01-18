@@ -1,6 +1,4 @@
-import React from "react";
 import styled from "styled-components";
-import Container from "@common/components/Containers/Container";
 import DetailCard from "@common/components/Cards/DetailCard";
 import SectionTitle from "@common/components/Texts/SectionTitle";
 import ContentTitle from "@common/components/Texts/ContentTitle";

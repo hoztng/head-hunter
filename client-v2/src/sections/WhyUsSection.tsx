@@ -32,7 +32,7 @@ const StyledSectionTitle = styled(SectionTitle)`
   text-align: center;
 `;
 
-const WhyUsSection = () => {
+const WhyUsSection:React.FC = () => {
   return (
     <StyledContainer>
       <div id="Why choose us"></div>

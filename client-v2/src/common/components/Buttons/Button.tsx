@@ -78,11 +78,11 @@ interface ButtonProps {
   variant: keyof typeof colors;
   children: React.ReactNode;
   style?: any; //React.CSSProperties; 
-  disabled: boolean;
+  disabled?: boolean;
 }
 
 // Button component
-const Button: React.FC<ButtonProps> = ({ size, variant, children, style, disabled, ...props }) => {
+const Button: React.FC<ButtonProps> = ({ size, variant, children, style, disabled=false, ...props }) => {
   return (
     <StyledButton size={size} variant={variant} style={style} disabled={disabled} {...props}>
       {children}

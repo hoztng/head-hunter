@@ -3,11 +3,10 @@ import './App.css'
 import './assets/fonts/fonts.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from '@routes/index';
-import Header from '@layout/Header';
 import Footer from '@layout/Footer';
 import Navbar from '@layout/Navbar';
 
-function App() {
+function App(){
 
   return (
     <Router>
@@ -22,5 +21,7 @@ function App() {
     </Router>
   )
 }
+
+App as React.FC;
 
 export default App
