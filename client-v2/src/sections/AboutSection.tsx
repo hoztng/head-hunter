@@ -53,12 +53,6 @@ const StyledContentWrapper = styled.div`
   }
 `;
 
-const StyledAbsolutePosition = styled(Container)`
-  @media (max-width: 1200px){
-    
-  }
-`
-
 const StyledContainer = styled(Container)`
    padding: 60px 20px;
    @media (max-width: 740px ) {
