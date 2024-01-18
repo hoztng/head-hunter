@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
 
     alias: {
+      '@': resolve(__dirname, 'src'), // find "/" from src folder
       '@app': resolve(__dirname, 'src/app'),
       '@features': resolve(__dirname, 'src/features'),
       '@common': resolve(__dirname, 'src/common'),
