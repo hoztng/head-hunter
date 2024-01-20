@@ -11,6 +11,11 @@ import {
   StyledInnerContainer,
 } from "@common/components/Containers/SplitContainer";
 
+import RecruiterImage from "@assets/images/recruiter.png";
+import TalentPoolIcon from "@assets/icons/ic_talent_pool.svg";
+import TalentIcon from "@assets/icons/ic_talent.svg";
+import EmployerIcon from "@assets/icons/ic_employer.svg";
+
 interface ForJobRecruitersSctionProps {}
 
 const ForRecruitersSction: React.FC<ForJobRecruitersSctionProps> = () => {
@@ -26,22 +31,23 @@ const ForRecruitersSction: React.FC<ForJobRecruitersSctionProps> = () => {
               subtext="We tailors the hiring process to your needs, 
               leveraging smart candidate matching, real-time 
               insights, and innovative tools."
-              iconUrl="/assets/icons/ic_employer.svg"
+              iconUrl={EmployerIcon}
             />
             <DetailCardWrapper
               text="Access Top Talent Instantly"
               subtext="We accelerates your recruitment journey, connecting you with high-caliber candidates effortlessly. welcome excellence into your team."
-              iconUrl="/assets/icons/ic_talent.svg"
+              iconUrl={TalentIcon}
             />
             <DetailCardWrapper
               text="Diverse Talent Pools"
               subtext="Embrace diversity in your workplace. We brings together candidates from various backgrounds and experiences."
-              iconUrl="/assets/icons/ic_talent_pool.svg"
+              iconUrl={TalentPoolIcon}
             />
           </StyledCardWrapper>
         </StyledDetailsWrapper>
         <StyledImageWrapper>
-          <StyledImage src="/assets/images/recruiter.png" />
+          <StyledImage src={RecruiterImage} />
+          
         </StyledImageWrapper>
       </StyledInnerContainer>
     </Container>

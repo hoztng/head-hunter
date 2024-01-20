@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
+import { darken } from 'polished';
+
+import _MenuIcon from "@assets/icons/menu.svg";
+import _CloseIcon from "@assets/icons/close.svg";
+import _LogoIcon from "@assets/icons/logo-icon.svg";
 
 const sliderMoveDuration = 0.2;
 const sliderColor = "white";
@@ -31,7 +36,7 @@ const LinkItem = styled.li`
     margin: 6px 8px;
     width: 200px;
     &:hover {
-      background-color: red;
+      background-color: red ;
     }
   }
 `;
@@ -85,11 +90,11 @@ const MenuController = styled.img`
 `;
 
 const MenuIcon = styled(MenuController).attrs({
-  src: "/assets/icons/menu.svg",
+  src: _MenuIcon,
 })``;
 
 const CloseIcon = styled(MenuController).attrs({
-  src: "/assets/icons/close.svg",
+  src: _CloseIcon,
 })``;
 
 const LogoIcon = styled.img`
@@ -213,7 +218,7 @@ const Navbar = () => {
       <div ref={navRef}>
         <Nav open={open} navbavisible={navbaVisible}>
           <LogoIcon
-            src="/assets/icons/logo-icon.svg"
+            src={_LogoIcon}
             alt="head hunter website"
           />
           <LinksWrapper>

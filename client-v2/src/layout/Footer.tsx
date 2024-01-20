@@ -1,28 +1,12 @@
-// import React from 'react';
-// import FooterItem from '@common/components/FooterItem';
-
-// const Footer = () => {
-//   const footerItems = [
-//     { title: 'For Job Seekers', items: ['Overview', 'Startup Jobs', 'Tech Startups', 'Remote'] },
-//     { title: 'For Recruiters', items: ['Overview', 'Resources', 'Pricing'] },
-//     { title: 'Company', items: ['About Us', 'Work with Us', 'Contact Us', 'Privacy Policy', 'Terms of Use'] },
-//     { title: 'Support', items: ['FAQs', 'Blog', 'Contact Us', 'Terms of Use'] }
-//   ];
-//   return (
-//     <footer>
-//       {footerItems.map((section, index) => (
-//         <FooterItem key={index} title={section.title} items={section.items} />
-//       ))}
-//     </footer>
-//   )
-// }
-
-// export default Footer;
-
 import React from "react";
 import styled from "styled-components";
 import SVG from "react-inlinesvg";
 import Container from "@common/components/Containers/Container";
+
+import FbIcon from "@assets/icons/fb.svg";
+import LinkedinIcon from "@assets/icons/linkedin.svg";
+import TwiterIcon from "@assets/icons/twiter.svg";
+import _LogoIcon from "@assets/icons/logo-icon.svg";
 
 const FooterText = styled.p`
   color: var(--neutral-800, #232325);
@@ -152,7 +136,7 @@ const Footer:React.FC = () => {
         <GridContainer>
           <GridItem verticalAlign="center" horizontalAlign="center">
             <LogoIcon
-              src="/assets/icons/logo-icon.svg"
+              src={_LogoIcon}
               alt="head hunter website"
             />
             <FooterText>
@@ -172,13 +156,13 @@ const Footer:React.FC = () => {
             <FooterTitle >Let’s Connect</FooterTitle>
             <IconListWrapper>
               <IconWrapper onClick={() => window.open('https://www.facebook.com', '_blank')}>
-                <Icon src="/assets/icons/fb.svg"/>
+                <Icon src={FbIcon}/>
               </IconWrapper>
               <IconWrapper onClick={() => window.open('https://www.linkedin.com', '_blank')}>
-                <Icon src="/assets/icons/linkedin.svg"/>
+                <Icon src={LinkedinIcon}/>
               </IconWrapper>
               <IconWrapper onClick={() => window.open('https://www.twitter.com', '_blank')}>
-                <Icon src="/assets/icons/twiter.svg"/>
+                <Icon src={TwiterIcon}/>
               </IconWrapper>
             </IconListWrapper>
           </GridItem>

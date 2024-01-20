@@ -6,6 +6,9 @@ import SectionTitle from '@common/components/Texts/SectionTitle';
 import ContentTitle from '@common/components/Texts/ContentTitle';
 import SectionText from '@common/components/Texts/SectionText';
 
+import ProfessionalCollaboration from "@assets/images/professional-collaboration.png";
+import SuccessfulHiresIcon from "@assets/icons/ic_successful_hires.svg";
+import CompanyIcon from "@assets/icons/ic_company.svg";
 
 const StyledImage = styled.img`
   max-width: 604px;
@@ -76,7 +79,7 @@ const AboutSection:React.FC = () => {
       <StyledContainer>
       <div id="Who we are">
       <StyledGridContainer>
-          <StyledImage src="/assets/images/professional-collaboration.png"/>
+          <StyledImage src={ProfessionalCollaboration}/>
           <StyledContentWrapper>
             <SectionTitle>About Us</SectionTitle>
             <ContentTitleWrapper>We’re Not Just A typical job portal</ContentTitleWrapper>
@@ -86,8 +89,8 @@ const AboutSection:React.FC = () => {
               their dream roles is what we do best.
             </SectionText>
             <StyledCardWrapper>
-              <CounterCard  text="15 K+" subtext="Successful Hires" iconUrl="/assets/icons/ic_successful_hires.svg" shadow={false} />
-              <CounterCard  text="10 k+" subtext="Companies Seeking Talent" iconUrl="/assets/icons/ic_company.svg" shadow={false} />
+              <CounterCard  text="15 K+" subtext="Successful Hires" iconUrl={SuccessfulHiresIcon} shadow={false} />
+              <CounterCard  text="10 k+" subtext="Companies Seeking Talent" iconUrl={CompanyIcon} shadow={false} />
             </StyledCardWrapper>
           </StyledContentWrapper>
 
@@ -98,13 +101,3 @@ const AboutSection:React.FC = () => {
 }
 
 export default AboutSection;
-
-
-  {/* 
-    <Container>
-      <CounterCard  text="800 K+" subtext="Current Job Openings" iconUrl="/assets/icons/ic_job_bag.svg" shadow={true} />
-      <CounterCard  text="14 Days" subtext="Average Time To Hire" iconUrl="/assets/icons/ic_date_time.svg" shadow={true} />
-      
-    </Container> 
-
-  */}

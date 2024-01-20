@@ -2,6 +2,12 @@ import Container from "@common/components/Containers/Container";
 import React from "react";
 import styled from "styled-components";
 
+import Wso2Icon from "@assets/icons/Logo WSO2.svg";
+import AmazonIcon from "@assets/icons/Logo Amazon.svg";
+import IbmIcon from "@assets/icons/Logo IBM.svg";
+import IntelIcon from "@assets/icons/Logo Intel.svg";
+import MicrosoftIcon from "@assets/icons/Logo Microsoft.svg";
+
 const StyledIcon = styled.img`
   filter: grayscale(100%);
   transition: filter 0.3s ease;
@@ -32,6 +38,7 @@ const TextWrapper = styled.div`
       min-width: auto;
   }
 `;
+
 const IconWrapper = styled.div`
    display: flex;
    flex-grow: 1;
@@ -43,7 +50,6 @@ const IconWrapper = styled.div`
   @media (max-width: 500px) {
     justify-content: space-evenly;
   }
-
 `;
 
 const Container2 = styled.div`
@@ -73,13 +79,6 @@ const OutContainer = styled.div`
   background: #F8F5FF;
 `;
 
-
-// const StyledContainer = styled.div`
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 20px;
-// `;
-
 const StakeholderSection: React.FC = () => {
   return (
     <OutContainer>
@@ -90,11 +89,11 @@ const StakeholderSection: React.FC = () => {
             <Text variant='regular' >Our candidates have been hired by</Text>
         </TextWrapper>
         <IconWrapper>
-        <StyledIcon src="/assets/icons/Logo WSO2.svg" />
-        <StyledIcon src="/assets/icons/Logo Amazon.svg" />
-        <StyledIcon src="/assets/icons/Logo IBM.svg" />
-        <StyledIcon src="/assets/icons/Logo Intel.svg" />
-        <StyledIcon src="/assets/icons/Logo Microsoft.svg" />
+        <StyledIcon src={Wso2Icon} />
+        <StyledIcon src={AmazonIcon} />
+        <StyledIcon src={IbmIcon} />
+        <StyledIcon src={IntelIcon} />
+        <StyledIcon src={MicrosoftIcon} />
         </IconWrapper>
     </Container2>
     </Container>

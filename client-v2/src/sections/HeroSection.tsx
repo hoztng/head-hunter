@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import backgroundImage from '../assets/images/hero-background.png'; 
+import backgroundImage from '@assets/images/hero-background.png'; 
 import Button from '@common/components/Buttons/Button';
 
 // Styled button component
