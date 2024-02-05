@@ -120,6 +120,7 @@ interface CounterCardProps {
   subtext: string;
   iconUrl: string;
   shadow: boolean;
+  className?: string;
 }
 
 const CounterCard: React.FC<CounterCardProps> = ({
@@ -127,9 +128,10 @@ const CounterCard: React.FC<CounterCardProps> = ({
   subtext,
   iconUrl,
   shadow,
+  className
 }) => {
   return (
-    <Container shadow={shadow}>
+    <Container shadow={shadow} className={className}>
       <IconWrapper>
         <Icon src={iconUrl} />
       </IconWrapper>

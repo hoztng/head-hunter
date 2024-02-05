@@ -36,7 +36,8 @@ const LinkItem = styled.li`
     margin: 6px 8px;
     width: 200px;
     &:hover {
-      background-color: red ;
+      background-color: ${darken(0.1, '#f0f0f0')};
+      padding-left: 6px;
     }
   }
 `;
@@ -151,17 +152,19 @@ const Links: React.FC<{ open: boolean; toggleMenu?: () => void }> = ({
   toggleMenu = () => {},
 }) => {
 
-
   const items: string[] = [
     "Who we are",
     "Why choose us",
     "Let’s Talk",
   ];
+  
   const clickNavigationItemHandle = (itemId: string) => {
     const section = document.getElementById(itemId);
     if(section){
       const offsetTop = section.offsetTop;
-      const offsetAmount = 95;
+      const isMobileView = window.innerWidth <= 834;
+      const offsetHeight = 90;
+      const offsetAmount = isMobileView ? offsetHeight + headerHeight : offsetHeight;
       window.scrollTo({
         top: offsetTop-offsetAmount,
         behavior:'smooth'

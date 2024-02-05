@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
 
     alias: {
-      '@assets': resolve(__dirname, '/assets'), // find "/" from src folder
+      '@assets': resolve(__dirname, 'src/assets'),
       '@app': resolve(__dirname, 'src/app'),
       '@features': resolve(__dirname, 'src/features'),
       '@common': resolve(__dirname, 'src/common'),

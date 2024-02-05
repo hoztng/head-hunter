@@ -66,28 +66,50 @@ const StyledContainer = styled(Container)`
 const StyledCardWrapper = styled.div`
   display: inline-flex;
   flex-direction: column;
+  margin-top: 32px;
 `;
 
 const ContentTitleWrapper = styled(ContentTitle)`
+  margin-top: 32px;
   @media (max-width: 375px ) {
+    margin-top: 25px;
     text-align: center;
   }
 `;
+
+const StyledSectionText = styled(SectionText)`
+  margin-top: 48px;
+  @media (max-width: 834px ) {
+    margin-top: 40px;
+  }
+  @media (max-width: 375px ) {
+    margin-top: 32px;
+  }
+`;
+
+const StyledImageContainer = styled.div`
+  position: relative;
+`;
+
 
 const AboutSection:React.FC = () => {
   return (
       <StyledContainer>
       <div id="Who we are">
       <StyledGridContainer>
+          <StyledImageContainer>
           <StyledImage src={ProfessionalCollaboration}/>
+          <CounterCard  text="15 K+" subtext="Successful Hires" iconUrl={SuccessfulHiresIcon} shadow={true} />
+          <CounterCard  text="15 K+" subtext="Successful Hires" iconUrl={SuccessfulHiresIcon} shadow={true} />
+          </StyledImageContainer>
           <StyledContentWrapper>
             <SectionTitle>About Us</SectionTitle>
             <ContentTitleWrapper>We’re Not Just A typical job portal</ContentTitleWrapper>
-            <SectionText>
+            <StyledSectionText>
               We're your career ally. Connecting companies with 
               top-notch candidates and helping job seekers find 
               their dream roles is what we do best.
-            </SectionText>
+            </StyledSectionText>
             <StyledCardWrapper>
               <CounterCard  text="15 K+" subtext="Successful Hires" iconUrl={SuccessfulHiresIcon} shadow={false} />
               <CounterCard  text="10 k+" subtext="Companies Seeking Talent" iconUrl={CompanyIcon} shadow={false} />

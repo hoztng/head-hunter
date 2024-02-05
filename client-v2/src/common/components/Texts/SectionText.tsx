@@ -1,8 +1,9 @@
-import React, { ReactNode } from 'react';
-import styled from 'styled-components';
+import React, { ReactNode } from "react";
+import styled from "styled-components";
 
 interface SectionTextProps {
-    children:ReactNode
+  children: ReactNode;
+  className? : string;
 }
 
 const Text = styled.p`
@@ -25,10 +26,8 @@ const Text = styled.p`
   }
 `;
 
-const SectionText:React.FC<SectionTextProps> = ({children}) => {
-  return (
-    <Text>{children}</Text>
-  )
-}
+const SectionText: React.FC<SectionTextProps> = ({ children, className }) => {
+  return <Text className={className}>{children}</Text>;
+};
 
 export default SectionText;
